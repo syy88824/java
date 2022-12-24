@@ -8,21 +8,38 @@ public class Main {
 
 	public static void main(String[] args)throws IOException{
 		File hsrSchedule = new File("HSR.txt");
-		//File trainSchedule = new File("");
+		File trainSchedule = new File("");
 		Scanner hsrReader = new Scanner(hsrSchedule);
-		//Scanner trainReader = new Scanner(trainSchedule);
-		//int tsrCount = 0;
-		//int trainCount = 0;
-		String content = hsrReader.nextLine();
-		System.out.println(content);
+		Scanner trainReader = new Scanner(trainSchedule);
+		int hsrCount = 0;
+		int trainCount = 0;
 		
-		/*
+		
+		
 		while(hsrReader.hasNextLine()) {
-			//用陣列值當成參數、建立n個新高鐵物件
-			tsrCount += 1;
+			boolean found = false;
+			if(!found) {
+				String[] hsr = hsrReader.nextLine().split(" ");
+				int hsrNum = Integer.parseInt(hsr[0]);
+				int departureTime = Integer.parseInt(hsr[1]);
+				int arriveTime = Integer.parseInt(hsr[2]);
+				String destination = hsr[3];
+				int costTime = Integer.parseInt(hsr[4]);
+				HSR hsr = new HSR(hsrNum, departureTime, arriveTime, destination);
+			}
+			hsrCount += 1;
 		}
 		while(trainReader.hasNextLine()) {
-			//用陣列值當成參數、建立n個新火車物件
+			boolean found = false;
+			if(!found) {
+				String[] train = trainReader.nextLine().split(" ");
+				int hsrNum = Integer.parseInt(train[0]);
+				int departureTime = Integer.parseInt(train[1]);
+				int arriveTime = Integer.parseInt(train[2]);
+				String destination = train[3];
+				int costTime = Integer.parseInt(train[4]);
+				Train hsr = new Train(hsrNum, departureTime, arriveTime, destination);
+			}
 			trainCount += 1;
 		}
 		
@@ -36,7 +53,5 @@ public class Main {
 			trainList.add(Train);
 		}
 		
-		*/
+		
 	}
-
-}
