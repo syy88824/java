@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args)throws IOException{
 		File hsrSchedule = new File("HSR.txt");
-		File trainSchedule = new File("");
+		File trainSchedule = new File("train.txt");
 		Scanner hsrReader = new Scanner(hsrSchedule);
 		Scanner trainReader = new Scanner(trainSchedule);
 		int hsrCount = 0;
