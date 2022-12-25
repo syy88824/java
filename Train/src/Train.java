@@ -1,9 +1,10 @@
-
 public class Train {
-	private String place;
 	private int price;
-	public int getPrice(String place) {
-		switch (place) {
+	public Train(int trainNum, int departureTime, int arriveTime, String destination, int costTime) {
+		
+	}
+	public int getPrice(String destination) {
+		switch (destination) {
 			case "Keelung":
 				price = 64;
 			case "Taoyuan":
