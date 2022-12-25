@@ -1,5 +1,5 @@
 
-public class train {
+public class Train {
 	private String place;
 	private int price;
 	public int getPrice(String place) {
