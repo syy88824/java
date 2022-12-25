@@ -25,7 +25,7 @@ public class Main {
 				int arriveTime = Integer.parseInt(hsr[2]);
 				String destination = hsr[3];
 				int costTime = Integer.parseInt(hsr[4]);
-				HSR hsr = new HSR(hsrNum, departureTime, arriveTime, destination);
+				HSR hsr = new HSR(hsrNum, departureTime, arriveTime, destination, costTime);
 			}
 			hsrCount += 1;
 		}
@@ -38,7 +38,7 @@ public class Main {
 				int arriveTime = Integer.parseInt(train[2]);
 				String destination = train[3];
 				int costTime = Integer.parseInt(train[4]);
-				Train hsr = new Train(hsrNum, departureTime, arriveTime, destination);
+				Train hsr = new Train(hsrNum, departureTime, arriveTime, destination, costTime);
 			}
 			trainCount += 1;
 		}
