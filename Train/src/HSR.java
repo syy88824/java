@@ -1,5 +1,5 @@
 
-public class HSR {
+public class HSR extends Super{
 	private int price;
 	private String seatType;
 	private boolean isReservedSeat;
