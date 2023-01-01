@@ -101,4 +101,10 @@ public class HSR {
 		}
 	return isReservedSeat;
 	}
+	
+	public void getSummary() {
+		int total = getPrice(getDestination(), checkSeats(seatType)) * getTicketNum();
+		System.out.printf("The recommended HSR number is %d.\nDepart at: %d, Arrive at: %d in %s\n"
+				+ "Total time: %d minutes\nTotal ticket fare is $%d",getNum(), getDepartureTime(), getArriveTime(), getDestination(), getCostTime(), total);
+	}
 }
