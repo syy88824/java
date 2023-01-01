@@ -1,4 +1,4 @@
-public class Train {
+public class Train extends Super{
 	private int price;
 	
 	public Train(int trainNum, int departureTime, int arriveTime, String destination, int costTime, int ticketNum) {
