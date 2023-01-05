@@ -25,8 +25,8 @@ public class Main {
 		
 		for(int i = 0; i < 453; i++) {
 			int hsrNum = Integer.parseInt(hsrReader.next());
-			int departureTime = Integer.parseInt(hsrReader.next());
-			int arriveTime = Integer.parseInt(hsrReader.next());
+			String departureTime = hsrReader.next();
+			String arriveTime = hsrReader.next();
 			String destination = hsrReader.next();
 			int costTime = Integer.parseInt(hsrReader.next());
 			String seatType = hsrReader.next();
@@ -36,8 +36,8 @@ public class Main {
 		
 		for(int i = 0; i < 76; i++) {
 			int trainNum = Integer.parseInt(trainReader.next());
-			int departureTime = Integer.parseInt(trainReader.next());
-			int arriveTime = Integer.parseInt(trainReader.next());
+			String departureTime = trainReader.next();
+			String arriveTime = trainReader.next();
 			String destination = trainReader.next();
 			int costTime = Integer.parseInt(trainReader.next());
 			Train newTrain = new Train(trainNum, departureTime, arriveTime, destination, costTime, ticketNum);
