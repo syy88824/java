@@ -1,16 +1,16 @@
 
 public class Super {
 	private int num;
-	private int departureTime;
-	private int arriveTime;
+	private String departureTime;
+	private String arriveTime;
 	private String destination;
 	private int costTime;
 	private int ticketNum;
 	
-	public Super(int num, int departureTime, int arriveTime, String destination, int costTime, int ticketNum) {
+	public Super(int num, String departureTime2, String arriveTime2, String destination, int costTime, int ticketNum) {
 		this.num = num;
-		this.departureTime = departureTime;
-		this.arriveTime = arriveTime;
+		this.departureTime = departureTime2;
+		this.arriveTime = arriveTime2;
 		this.destination = destination;
 		this.costTime = costTime;
 		this.ticketNum = ticketNum;
@@ -20,11 +20,11 @@ public class Super {
 		return num;
 	}
 	
-	public int getDepartureTime() {
+	public String getDepartureTime() {
 		return departureTime;
 	}
 	
-	public int getArriveTime() {
+	public String getArriveTime() {
 		return arriveTime;
 	}
 	
