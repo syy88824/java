@@ -4,7 +4,7 @@ public class HSR extends Super{
 	private String seatType;
 	private boolean isReservedSeat;
 	
-	public HSR(int num, int departureTime, int arriveTime, String destination, int costTime, String seatType, int ticketNum){
+	public HSR(int num, String departureTime, String arriveTime, String destination, int costTime, String seatType, int ticketNum){
 		super(num, departureTime, arriveTime, destination, costTime, ticketNum);
 		this.seatType = seatType;
 	}
@@ -37,7 +37,7 @@ public class HSR extends Super{
 				price = 930;
 				break;
 			case "Chiayi":
-				price = 1080
+				price = 1080;
 				break;
 			case "Tainan":
 				price = 1350;
