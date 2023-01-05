@@ -34,7 +34,7 @@ public class Main {
 			hsrList.add(newHSR);
 		}//新增高鐵物件
 		
-		for(int i = 0; i < 76; i++) {
+		for(int i = 0; i < 125; i++) {
 			int trainNum = Integer.parseInt(trainReader.next());
 			String departureTime = trainReader.next();
 			String arriveTime = trainReader.next();
