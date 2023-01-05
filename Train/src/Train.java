@@ -1,10 +1,10 @@
-public class Train extends Super{
-	private int price;
-	
-	public Train(int trainNum, int departureTime, int arriveTime, String destination, int costTime, int ticketNum) {
-		super(trainNum, departureTime, arriveTime, destination, costTime, ticketNum);
+
+public class Train extends Super {
+	public Train(int num, String departureTime2, String arriveTime2, String destination, int costTime, int ticketNum) {
+		super(num, departureTime2, arriveTime2, destination, costTime, ticketNum);
+		// TODO Auto-generated constructor stub
 	}
-	
+	private int price;
 	public int getPrice(String destination) {
 		switch (destination) {
 			case "Keelung":
@@ -49,10 +49,10 @@ public class Train extends Super{
 		}
 		return price;
 	}
-	
 	public void getSummary() {
 		int total = getPrice(getDestination()) * getTicketNum();
-		System.out.printf("The recommended Train number is %d.\nDepart at: %d, Arrive at: %d in %s\n"
+		System.out.println(getDestination()+" "+getPrice(getDestination())+ "*"+ getTicketNum());
+		System.out.printf("The recommended Train number is %d.\nDepart at: %s, Arrive at: %s in %s\n"
 				+ "Total time: %d minutes\nTotal ticket fare is $%d",getNum(), getDepartureTime(), getArriveTime(), getDestination(), getCostTime(), total);
 	}
 }
