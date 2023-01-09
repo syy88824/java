@@ -61,8 +61,6 @@ public class Main {
 			}
 		}
 		
-		
-		//從目的地裡撈出預算符合的
 		for(HSR hsr: trueDestinationHSR) {
 			if(hsr.getPrice(goal, hsr.checkSeats(hsr.getSeatType())) <= budget) {
 				budgetOKHSR.add(hsr);
@@ -81,8 +79,6 @@ public class Main {
 			budgetOKTrain.add(null);
 		}
 		
-		
-		//找出符合預算中最快的
 		HSR fastestHSR = budgetOKHSR.get(0);
 		Train fastestTrain = budgetOKTrain.get(0);
 		
