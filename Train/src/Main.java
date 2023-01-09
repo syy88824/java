@@ -49,7 +49,6 @@ public class Main {
 		ArrayList<HSR> budgetOKHSR = new ArrayList<HSR>();
 		ArrayList<Train> budgetOKTrain = new ArrayList<Train>();
 		
-		//判斷車次的目的地
 		for(HSR hsr: hsrList) {
 			if(hsr.getDestination().equals(goal)) {
 				trueDestinationHSR.add(hsr);
